@@ -17,7 +17,7 @@ struct Stack* stack_ctr (size_t capacity, size_t element_size)
     stk->element_size = element_size;
 
     stk->data = (void **)calloc(capacity, element_size);
-    printf ("%p", stk->data);
+    
     return stk;
 }
 
